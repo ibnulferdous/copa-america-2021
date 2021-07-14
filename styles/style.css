@@ -52,6 +52,10 @@ img {
     padding: 10px 25px;
 }
 
+.button:hover {
+    background: #e3417b;
+}
+
 
 
 /* ----------------------------------- 
@@ -132,4 +136,30 @@ header h1 {
     to {
         transform: rotate(0deg);
     }
+}
+
+
+/* ----------------------------------- 
+            Players List 
+--------------------------------------*/
+.players-list .container {
+    padding: 75px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.player-details {
+    padding: 20px;
+    box-shadow: 0 0 10px 2px #00000017;
+}
+
+.player-details h2 {
+    color: var(--text-black);
+    margin: 15px 0;
+}
+
+.player-details p {
+    color: var(--text-grey);
+    margin-bottom: 10px;
 }
