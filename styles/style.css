@@ -19,6 +19,7 @@ body {
 
 a {
     text-decoration: none;
+    display: inline-block;
 }
 
 ul {
@@ -50,10 +51,18 @@ img {
     font-size: 16px;
     font-weight: 500;
     padding: 10px 25px;
+    transition: transform .4s
 }
 
 .button:hover {
-    background: #e3417b;
+    transform: scaleY(1.15);
+}
+
+.secondary-title {
+    font-size: 60px;
+    color: var(--text-black);
+    line-height: 1.25em;
+    margin: 0 0 10px;
 }
 
 
@@ -163,3 +172,124 @@ header h1 {
     color: var(--text-grey);
     margin-bottom: 10px;
 }
+
+
+/* ----------------------------------- 
+            All highlights 
+--------------------------------------*/
+.all-highlights {
+    padding: 50px 0;
+}
+
+.all-highlights .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 5%;
+}
+
+.all-highlights p {
+    color: var(--text-grey);
+    margin: 10px 0;
+}
+
+.all-highlights .button {
+    margin: 15px 0 0;
+}
+
+.all-highlights .button i {
+    margin-left: 12px;
+}
+
+
+/* ----------------------------------- 
+        Highlights from Youtube 
+--------------------------------------*/
+.youtube-highlights .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.youtube-highlights .container div {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.youtube-highlights iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ----------------------------------- 
+                Gallery 
+--------------------------------------*/
+.gallery {
+    padding: 125px 0 50px;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.gallery h2 {
+    margin: 0 0 30px;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* ----------------------------------- 
+                footer 
+--------------------------------------*/
+footer .container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer img {
+    width: 85%;
+}
+
+.social-medias {
+    display: flex;
+    justify-content: center;
+}
+
+.social-medias div {
+    background: #E7E7E8;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7px;
+}
+
+.social-medias a {
+    color: #969BAB;
+}
+
+.social-medias a:hover {
+    color: var(--pink);
+}
+
+footer p {
+    color: var(--text-black);
+    margin: 20px 0 10px;
+}
+
+
