@@ -86,6 +86,10 @@ nav ul div {
     display: flex;
 }
 
+.mobile-icon {
+    display: none;
+}
+
 nav ul div li a {
     color: var(--white);
     font-weight: 500;
@@ -293,3 +297,126 @@ footer p {
 }
 
 
+/* --------------------------------------------------
+                    Media Query 
+---------------------------------------------------*/
+
+/* ------------------  Tablet ---------------------- */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    nav ul div li {
+        display: none;
+    }
+
+    .mobile-icon {
+        display: block;
+        font-size: 25px;
+    }
+
+    header {
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        padding: 8% 0;
+    }
+
+    header .content {
+        padding-bottom: 8%;
+    }
+
+    .players-list .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .all-highlights {
+        padding: 50px 0 70px;
+    }
+
+    .all-highlights .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .all-highlights .container div {
+        text-align: center;
+    }
+
+    .youtube-highlights .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ------------------  Mobile ---------------------- */
+
+@media only screen and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .secondary-title {
+        font-size: 8vw;
+    }
+
+    .mobile-icon {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul div li {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        align-content: center;
+        text-align: left;
+        padding: 15% 0;
+    }
+
+    header .content {
+        padding-bottom: 20%;
+    }
+
+    header h1 {
+        font-size: 10vw;
+        line-height: 1.25em;
+        margin: 0 0 27px;
+    }
+
+    .players-list .container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 25px 0;
+    }
+
+    .player-details h2 {
+        font-size: 6vw;
+    }
+
+    .all-highlights .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .youtube-highlights .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery {
+        padding: 75px 0 50px;
+    }
+
+    .gallery-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer .container {
+        max-width: 90%;
+    }
+
+    footer img {
+        width: 100%;
+    }
+}
